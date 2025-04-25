@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - users/**
+  workflow_dispatch: {}
 
 jobs:
   build:

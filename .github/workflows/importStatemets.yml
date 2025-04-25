@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - tasks/**
+  workflow_dispatch: {}
 
 jobs:
   build:
