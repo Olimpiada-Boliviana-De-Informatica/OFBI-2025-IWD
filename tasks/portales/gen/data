@@ -1,0 +1,24 @@
+@subtask samples
+copy ../public/examples/01.in
+
+@subtask subtask1
+gen_st1_increasing  1      10     1000000000
+gen_st1_increasing  1      100    1000000000
+gen_st1_increasing  1      1000   1000000000
+gen_st1_increasing  1      10000  1000000000
+gen_st1_increasing  1      10000  1000000000
+gen_st1_increasing  1      100000 1000000000
+gen_st1_increasing  10000  100000 1000000000
+gen_st1_increasing  100000 100000 1000000000
+
+@subtask subtask2
+gen_st2_decreasing  1      10     1000000000
+gen_st2_decreasing  1      100    1000000000
+gen_st2_decreasing  1      1000   1000000000
+gen_st2_decreasing  1      10000  1000000000
+gen_st2_decreasing  1      10000  1000000000
+gen_st2_decreasing  1      100000 1000000000
+gen_st2_decreasing  10000  100000 1000000000
+gen_st2_decreasing  100000 100000 1000000000
+
+@subtask subtask3

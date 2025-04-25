@@ -1,0 +1,18 @@
+# test_name gen_line_number gen_line_content
+0-01	  2	copy ../public/examples/01.in
+1-01	  5	gen_st1_increasing  1      10     1000000000
+1-02	  6	gen_st1_increasing  1      100    1000000000
+1-03	  7	gen_st1_increasing  1      1000   1000000000
+1-04	  8	gen_st1_increasing  1      10000  1000000000
+1-05	  9	gen_st1_increasing  1      10000  1000000000
+1-06	 10	gen_st1_increasing  1      100000 1000000000
+1-07	 11	gen_st1_increasing  10000  100000 1000000000
+1-08	 12	gen_st1_increasing  100000 100000 1000000000
+2-01	 15	gen_st2_decreasing  1      10     1000000000
+2-02	 16	gen_st2_decreasing  1      100    1000000000
+2-03	 17	gen_st2_decreasing  1      1000   1000000000
+2-04	 18	gen_st2_decreasing  1      10000  1000000000
+2-05	 19	gen_st2_decreasing  1      10000  1000000000
+2-06	 20	gen_st2_decreasing  1      100000 1000000000
+2-07	 21	gen_st2_decreasing  10000  100000 1000000000
+2-08	 22	gen_st2_decreasing  100000 100000 1000000000
