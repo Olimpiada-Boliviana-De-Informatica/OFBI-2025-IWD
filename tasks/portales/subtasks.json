@@ -14,6 +14,16 @@
             "index": 2,
             "score": 10,
             "validators": []
+        },
+        "subtask3": {
+            "index": 3,
+            "score": 20,
+            "validators": []
+        },
+        "subtask4": {
+            "index": 4,
+            "score": 60,
+            "validators": []
         }
     }
 }
