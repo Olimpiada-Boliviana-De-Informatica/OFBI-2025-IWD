@@ -1,11 +1,8 @@
-name: Continuous Deploy
+name: Import statemets
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - tasks/**
 
 jobs:
   build:
@@ -80,24 +77,17 @@ jobs:
       - name: Create folder
         run: ssh ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }} "rm -rf dataset && mkdir dataset || mkdir dataset"
 
-      - name: Upload tasks to the server
+      - name: Upload all tasks to server
         run: |
           ls -lha
-          scp -r cms ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
-          scp -r importAdmins.sh admins.csv ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
+          scp -r * ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
   
-      - name: Execute import
+      - name: Import Tasks
         run: |
           ssh ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }} 'bash -s' <<'ENDSSH'
           set +e
-          source /home/cms/.bashrc 
-          cd dataset
-          chmod +x importAdmins.sh
-          ./importAdmins.sh
 
           cd cms
-
-
           for dir in $(find -name '*.zip'); do
             unzip $dir;
           done

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CSV_FILE="users.csv"
+CSV_FILE="../users/users.csv"
 
 while IFS=',' read -r username password
 do
