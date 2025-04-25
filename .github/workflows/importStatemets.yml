@@ -30,26 +30,23 @@ jobs:
         run: |
           set +e
           ls -lha
-          mkdir cms/tasks
-          for dir in $(find . -maxdepth 1 -type d -not -path '*/\.*' -not -path './cms' -not -path '.'); do
-            if [ -d "$dir" ]; then
-              cd "$dir"
-              pwd
-              /usr/local/bin/tps gen
-              /usr/local/bin/tps export CMS -o "$(basename "$dir")" -a none 1 -v
-              cp -r statement "$(basename "$dir")"/
-              zip -r $(basename "$dir").zip "$(basename "$dir")"
-              cp -r $(basename "$dir").zip ../cms/
-              cd ..
+          mkdir -p cms
+          for dir in $(find tasks -maxdepth 1 -type d -not -path '*/\.*' -not -path './cms' -not -path '..commons' -not -path '.'); do
+          if [ -d "$dir" ] && [ "$(basename "$dir")" != "tasks" ]; then
+              echo "Processing directory: $dir ................."
+              rm "tasks/$(basename "$dir")"/*.zip
+              ./scripts/task-prepare-folder.sh "$(basename "$dir")"
+              ./scripts/task-gen-cases.sh "$(basename "$dir")"
+              ./scripts/task-gen-zip.sh "$(basename "$dir")"
+              cp "tasks/$(basename "$dir")"/*.zip cms
             fi
           done
-          
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: cms-artifact
           path: cms
-
           
   importTasks:
     needs: build
@@ -81,7 +78,7 @@ jobs:
       - name: Upload all tasks to server
         run: |
           ls -lha
-          scp -r * ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
+          scp -r cms ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
   
       - name: Import Tasks
         run: |
