@@ -85,7 +85,7 @@ jobs:
           ssh ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }} 'bash -s' <<'ENDSSH'
           set +e
 
-          cd cms
+          cd dataset/cms
           for dir in $(find -name '*.zip'); do
             unzip $dir;
           done
