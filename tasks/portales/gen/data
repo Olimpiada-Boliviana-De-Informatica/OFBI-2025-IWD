@@ -22,3 +22,31 @@ gen_st2_decreasing  10000  100000 1000000000
 gen_st2_decreasing  100000 100000 1000000000
 
 @subtask subtask3
+gen_st1_increasing  1      10     1000000000
+gen_st1_increasing  1      100    1000000000
+gen_st1_increasing  50     100    1000000000
+gen_st1_increasing  100    100    1000000000
+
+gen_st2_decreasing  1      10     1000000000
+gen_st2_decreasing  1      100    1000000000
+gen_st2_decreasing  50     100    1000000000
+gen_st2_decreasing  100    100    1000000000
+
+gen_st              1      10     1000000000
+gen_st              1      100    1000000000
+gen_st              20     100    1000000000
+gen_st              50     100    1000000000
+gen_st              75     100    1000000000
+gen_st              100    100    1000000000
+
+@subtask subtask4
+@include samples subtask1 subtask2 subtask3
+gen_st              1      10     1000000000
+gen_st              1      100    1000000000
+gen_st              1      1000   1000000000
+gen_st              1      1000   1000000000
+gen_st              1      10000  1000000000
+gen_st              1      100000 1000000000
+gen_st              10000  100000 1000000000
+gen_st              50000  100000 1000000000
+gen_st              100000 100000 1000000000

@@ -1,1 +1,1 @@
-make: Nothing to be done for `all'.
+g++ -std=c++20 -Wall -Wextra -O2 gen_st.cpp -o gen_st.exe -fdiagnostics-color=never
