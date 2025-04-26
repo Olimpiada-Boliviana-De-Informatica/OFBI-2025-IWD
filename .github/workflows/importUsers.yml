@@ -24,6 +24,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Setup SSH connection
         uses: webfactory/ssh-agent@v0.7.0
         with:
@@ -39,7 +42,7 @@ jobs:
         run: |
           ls -lha
           scp -r scripts ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
-          scp -r uasers ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
+          scp -r users ${{ vars.DEV_SSH_USERNAME }}@${{ vars.DEV_SSH_HOST }}:dataset/
   
       - name: Import admin users
         run: |
