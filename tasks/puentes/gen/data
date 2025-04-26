@@ -1,2 +1,50 @@
 @subtask samples
 copy ../public/examples/01.in
+
+@subtask subtask1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+gen_st 1
+
+@subtask subtask2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+gen_st 2
+
+@subtask subtask3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+gen_st 3
+
+@subtask subtask4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
+gen_st 4
