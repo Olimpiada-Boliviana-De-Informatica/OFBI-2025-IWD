@@ -4,7 +4,7 @@ Ada Lovelace está explorando un bosque lleno de portales mágicos. Cada portal 
 
 Cada vez que aparece un nuevo portal, Ada quiere saber cuál fue el último portal con número menor al actual. Si no hay ninguno, anota `-1`.
 
-![Ada y los portales](img.png)
+<img src="img.png" width="400"/>
 
 
 Ayúdala a encontrar esa información para cada portal que aparece.

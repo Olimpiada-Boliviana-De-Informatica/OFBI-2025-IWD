@@ -11,7 +11,7 @@ Ella descubrió que algunos puentes eran tan críticos que, si llegaran a romper
 Inspirada por su amor a las matemáticas y la lógica, Ada decidió estudiar este problema:
 encontrar cuántos puentes son verdaderamente esenciales para mantener a toda la ciudad conectada.
 
-![Grafo de los Puentes](img.png)
+<img src="img.png" width="400"/>
 
 Tu tarea es ayudar a Ada a calcular cuántos puentes de cristal son críticos.
 

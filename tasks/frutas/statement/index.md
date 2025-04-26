@@ -6,6 +6,8 @@ Para el banquete, Ada ha recolectado frutas en $N$ cestas, donde cada cesta cont
 
 Ada no quiere calcular cada posibilidad manualmente. En su lugar, decidió analizar cuántas maneras distintas existen para agrupar todas las frutas en partes iguales, de forma que cada grupo tenga la misma cantidad de frutas y no quede ninguna fruta sobrante.
 
+<img src="img.png" width="300"/>
+
 Tu tarea es ayudar a Ada a encontrar cuántos valores distintos cumplen esa condición.
 
 ## Entrada
@@ -16,8 +18,6 @@ La segunda línea contiene $N$ enteros $A_1$, $A_2$, ..., $A_n$ ($1 \leq A_i \le
 
 ## Salida
 Imprime un solo número entero, la cantidad de formas de dividir las frutas en grupos iguales. 
-
-![Las frutas de Ada](img.png)
 
 ## Ejemplos
 

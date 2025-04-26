@@ -6,6 +6,8 @@ Para cruzar el río y llegar al resultado final, Ada debe saltar de piedra en pi
 
 Ada quiere determinar cuál es el mínimo valor de D que le permita atravesar el río, partiendo desde la primera piedra y alcanzando la última sin realizar saltos que excedan esa distancia. Solo puede avanzar hacia adelante, y no puede saltar entre piedras que estén separadas por más de D.
 
+<img src="img.png" width="400"/>
+
 Tu misión es ayudar a Ada a calcular el valor óptimo de D.
 
 ### Entrada
@@ -34,6 +36,7 @@ Salida:
 ```
 4
 ```
+
 ## Subtareas
 
 ### Subtarea 1 (10 puntos)
