@@ -50,8 +50,8 @@ jobs:
           set +e
           source .bashrc
           cd dataset/scripts
-          chmod +x cms-import-admin.sh
-          ./cms-import-admin.sh
+          chmod +x cms-import-admins.sh
+          ./cms-import-admins.sh
           ENDSSH
 
       - name: Import users
