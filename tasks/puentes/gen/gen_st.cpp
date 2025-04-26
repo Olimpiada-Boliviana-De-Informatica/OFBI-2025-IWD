@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     }
     else if (subtask == 2) {
         // Subtarea 2: N <= 10, M <= 10, grafo 2-conexo
-        N = safe_random(2, 10);
+        N = safe_random(2, 100000);
         int maxM = min(10, N * (N - 1) / 2);
         if (maxM < N) maxM = N; // Necesario para hacer un ciclo
         M = safe_random(N, maxM);
@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
     }
     else if (subtask == 4) {
         // Subtarea 4: N <= 10, M <= 10
-        N = safe_random(1, 10);
+        N = safe_random(1, 100000);
         int maxM = min(10, N * (N - 1) / 2);
         if (maxM < 0) maxM = 0;
         M = safe_random(0, maxM);
