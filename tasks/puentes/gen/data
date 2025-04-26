@@ -26,6 +26,10 @@ gen_st 2
 gen_st 2
 
 @subtask subtask3
+copy ./manual/test-case-001.in
+copy ./manual/test-case-002.in
+copy ./manual/test-case-003.in
+copy ./manual/test-case-004.in
 gen_st 3
 gen_st 3
 gen_st 3
@@ -38,6 +42,10 @@ gen_st 3
 gen_st 3
 
 @subtask subtask4
+copy ./manual/test-case-001.in
+copy ./manual/test-case-002.in
+copy ./manual/test-case-003.in
+copy ./manual/test-case-004.in
 gen_st 4
 gen_st 4
 gen_st 4
