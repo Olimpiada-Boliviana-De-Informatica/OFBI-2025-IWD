@@ -52,7 +52,7 @@ jobs:
           cd dataset/scripts
           chmod +x cms-import-admins.sh
           ./cms-import-admins.sh
-          ENDSSH
+          ENDSSH || true
 
       - name: Import users
         run: |
@@ -62,4 +62,4 @@ jobs:
           cd dataset/scripts
           chmod +x cms-import-users.sh
           ./cms-import-users.sh
-          ENDSSH
+          ENDSSH || true
