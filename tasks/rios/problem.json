@@ -1,0 +1,15 @@
+{
+  "name": "rios",
+  "title": "Ada y el Rio de los Algoritmos",
+  "contest": "International Women's Day 2025",
+  "contest_date": "Sabado 26 de abril, 2025",
+  "contest_location": "USFA La Paz, Bolivia",
+  "type": "Batch",
+  "has_grader": false,
+  "java_enabled": false,
+  "python_enabled": false,
+  "time_limit": 1.0,
+  "memory_limit": 256,
+  "description": "Task description",
+  "web_url": "https://tps.example.com/tasks/mi-problema"
+}
