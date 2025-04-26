@@ -11,12 +11,17 @@ int main(int argc, char* argv[]) {
     int n = rnd.next(MIN_N, MAX_N);
     printf("%d\n", n);
     printf("%d\n", n);
+    vector<int> V;
     for (int i = 1; i < n; ++i) {
         int x = rnd.next(1, MAX_P);
+        V.push_back(x);
+    }
+    sort(V.begin(), V.end());
+    for (int i=0; i<n; i++){
         if (i){
             printf(" ");
         }
-        printf("%d", x);
+        printf("%d", V[i]);
     }
 
     return 0;
